@@ -1,5 +1,19 @@
-
 <view class="topv">
     <searchInput></searchInput>
+    <!-- swiper item -->
+    <view class="swiperView">
+        <swiper indicator-dots autoplay circular interval="3000">
+            <swiper-item wx:for="{{img_src}}" wx:for-index="index" wx:key="goods_id">
+                <navigator>
+                    <image mode="widthFix" src="{{item.image_src}}" />
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- catg item -->
+    <view class="catgView">
+        <navigator wx:for-index="index" wx:key="name" wx:for="{{catglist}}">
+            <image mode="widthFix" src="{{item.image_src}}" />
+        </navigator>
+    </view>
 </view>
-  

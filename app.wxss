@@ -8,6 +8,5 @@ page, view, text, swiper, swiper-item, image, navigator {
 page {
     /* 主题颜色 */
     --themeColor: #00ffff;
-    
     font-size: 36rpx;
 }
