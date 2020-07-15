@@ -16,4 +16,18 @@
             <image mode="widthFix" src="{{item.image_src}}" />
         </navigator>
     </view>
+    <!-- floor item -->
+    <view class="floorView">
+        <view class="floor_group" wx:for="{{floorlist}}" wx:key="floor_title" wx:for-item="item1">
+            <view class="floor_title">
+                <image class="floorimage" src="{{item1.floor_title.image_src}}" mode="widthFix" />
+            </view>
+            <view class="floor_item" wx:for="{{item1.product_list}}" wx:for-item="item2" wx:key="name" wx:item-index="index2">
+            <navigator url="" open-type="navigate">
+
+                <image class="item_image" src="{{item2.image_src}}" mode="{{index2===0?'widthFix':'scalToFill'}}" />
+            </navigator>
+            </view>
+        </view>
+    </view>
 </view>
