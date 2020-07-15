@@ -1,2 +1,4 @@
-<!--pages/goods_list/index.wxml-->
-<text>pages/goods_list/index.wxml</text>
+<view class="goods">
+hahah
+<searchInput></searchInput>
+</view>

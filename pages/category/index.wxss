@@ -1,1 +1,18 @@
-/* pages/category/index.wxss */
+page {
+  height: 100%;
+}
+.catagory {
+  height: 100%;
+}
+.catagory .cates_contens {
+  display: flex;
+  height: calc(100vh-90rpx);
+}
+.catagory .cates_contens .left_scroll {
+  background-color: #f888;
+  flex: 2;
+}
+.catagory .cates_contens .right_scroll {
+  flex: 5;
+  background-color: #f00;
+}

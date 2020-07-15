@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "searchInput":"/components/searchInput/searchInput"
+
+  },
   "navigationBarTitleText": "goods page"
 }
